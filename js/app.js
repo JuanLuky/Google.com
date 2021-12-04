@@ -5,7 +5,7 @@ function Pesquisar() {
     let url ='https://www.google.com/search?q='+valueInput;
 
     if(valueInput == "") {
-        alert('Please enter')
+        alert('Preencha o campo!')
     } else {
         window.open(url,'_self');
     }
