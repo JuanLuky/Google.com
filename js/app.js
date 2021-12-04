@@ -5,15 +5,13 @@ function Pesquisar() {
     let url ='https://www.google.com/search?q='+valueInput;
 
     if(valueInput == "") {
-        window.addEventListener("load")
+        alert('Please enter')
     } else {
         window.open(url,'_self');
     }
-
 }
 
-
-click = () => {
+function clickSearch() {
    Pesquisar();
 }
 window.addEventListener('keyup', function(event) {
@@ -22,5 +20,5 @@ window.addEventListener('keyup', function(event) {
     }
 });
 
-
+window.addEventListener("load")
 
