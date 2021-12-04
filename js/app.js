@@ -1,17 +1,24 @@
-search = () => {
+function Pesquisar() {
     let inputText = document.querySelector('.query');
     let valueInput = inputText.value;
     
     let url ='https://www.google.com/search?q='+valueInput;
-    window.open(url,'_self');
+
+    if(valueInput == "") {
+        window.addEventListener("load")
+    } else {
+        window.open(url,'_self');
+    }
+
 }
 
-window.addEventListener('keydown', function(event) {
+
+click = () => {
+   Pesquisar();
+}
+window.addEventListener('keyup', function(event) {
     if(event.key == "Enter"){
-        let inputText = document.querySelector('.query');
-        let valueInput = inputText.value;
-        let url ='https://www.google.com/search?q='+valueInput;
-        window.open(url,'_self');
+        Pesquisar();
     }
 });
 
